@@ -1,0 +1,17 @@
+try:
+    hrs = raw_input("Enter Hours:")
+    h = float(hrs) 
+    rate = raw_input("Enter Rate:")
+    r = float(rate) 
+   
+except: 
+    print "Please use numeric format"
+    quit() #this will stop the program if non numeric char  are entered
+
+if h > 40:
+    ot= h - 40
+    pay = (40 * r) + (ot * (r * 1.5)) 
+elif h <= 40: 
+    pay = h * r
+print pay
+
