@@ -1,0 +1,11 @@
+#This program will ask for a temperature in celsius then convert to Fahrenheit. 
+
+cel = raw_input("Degrees Celsius\n")
+c = float(cel)
+
+f = round(c*1.8000 + 32.00, 4)
+far = str(f)
+
+print "Degress in fahrenheit: " + far
+
+
